@@ -1,0 +1,118 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+h1 {
+    font-family:Helvetica;
+    margin:5px 0px 0px 15px;
+    font-size: 50pt;
+    font-weight:400;
+}
+body {
+    background-color:rgb(226, 244, 205);
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+.container {
+    margin:80px;
+    margin-top:0px;
+}
+section {
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+}
+.resume {
+    display:flex;
+    justify-content: center;
+}
+.resumeItemTitle {
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+}
+.resumeOrg {
+    text-align: left;
+    margin-top:15px;
+    margin-bottom:2.5px;
+}
+.resumeLocation {
+    text-align: right;
+    margin-top:15px;
+    margin-bottom:2.5px;
+}
+.resumePosition {
+    text-align: left;
+    margin-top:2.5px;
+    margin-bottom:15px;
+}
+.resumeTime {
+    text-align: right;
+    margin-top:2.5px;
+    margin-bottom:15px;
+}
+/* Apply styles to the menu */
+ul {
+    list-style-type: none;
+}
+nav {
+    display:flex;
+    margin:25px 0px 20px 5px;
+    padding:0;
+    background-color:rgb(226, 244, 205);
+    text-align: right;
+    position:sticky;
+    transition:ease-in-out 0.5s;
+    top:0;
+}
+.menu {
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-top:8px;
+    align-items:flex-end;
+    text-align:right;
+    margin-left: auto; 
+
+}
+  
+.menu li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 50px; /* Add spacing between menu items */
+    font-size:17px;
+}
+
+.menu li:last-child {
+    margin-right: 20px; /* Remove margin from the last item */
+}
+  
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border:0px;
+    transition: background-color 0.3s;
+    text-align:right;
+    font-weight: 500;
+
+  }
+  
+.menu a:hover {
+    background-color: rgba(102, 145, 54, 0.617); /* Change background color on hover */
+    padding: 5px 10px;
+}
+form {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:left;
+    margin:0;
+    padding:0;
+    margin-top:50px;
+}

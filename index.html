@@ -7,26 +7,36 @@
         <meta name="author" content="Andie Liu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">      
         <title>Andie Liu</title>
+        <link rel="stylesheet" href="./styles.css"> 
     </head>
     <body>
-        <h1>Andie Liu</h1>
-        <nav>
-            <ul>
-              <li><a href="./art.html">Painting</a></li>
-              <li><a href="./resume.pdf">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        
+        <div class="container">
+            
+            <nav>
+                <h1>Andie Liu</h1>
+                <ul class="menu" >
+                    <li><a href="./art.html">Painting</a></li>
+                    <li><a href="./resume.pdf">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        <div class="resume">
           <section id="about">
             <h2>About Me</h2>
             <p>
               I am a passionate computer science student with a strong interest in software engineering. 
               I'm currently in my third year at UC Berkeley. 
             </p>
-            <h3>Experience</h3>
-            <h4>Knowledge-based news recommendation system: Haas School of Business</h4> <h4>Berkeley, CA</h4>
-            <h5>Research Assistant</h5> <h5>May 2023 - Sept 2023</h5>
+            <h2>Experience</h2>
+            <div>
+                <div>
+                    <div class="resumeItemTitle">
+                        <h4 class="resumeOrg">Knowledge-based news recommendation system: Haas School of Business</h4> <h4 class="resumeLocation">Berkeley, CA</h4>
+                    </div>
+                    <div class="resumeItemTitle">
+                        <h5 class="resumePosition">Research Assistant</h5> <h5 class="resumeTime">May 2023 - Sept 2023</h5>
+                    </div>
+                </div>
                 <ul>
                     <li>
                         Use OpenAI API, Python libraries, clustering analysis, dynamic topic modeling, and Qualtrics to help design and
@@ -34,43 +44,76 @@
                         recommendations with natural language processing principles. Improved processing by a 100x speedup.
                     </li>
                 </ul>
-            <h4>Computer Science Mentors</h4> <h4>Berkeley, CA</h4>
-            <h5>Teacher</h5> <h5>Oct 2022 - May 2023</h5>
-            <ul>
-                <li>
-                    Taught 1-hour lessons on Discrete Mathematics & Probability Theory to 6 students twice a week. Delivered
-            conceptual mini-lectures and supported students through worksheets and practice exam problems. Received
-            consistent high reviews and positive feedback.
-                </li>
-            </ul>
-            <h4>Cognitive Science & Psychology Undergraduate Laboratory</h4> <h4>Berkeley, CA</h4>
-            <h5>Undergraduate Researcher</h5> <h5>Aug 2021 - May 2022</h5>
-            <ul>
-                <li>
-                    Wrote paper examining existing literature on moral judgment. Used R language for linear regression and contrast
-                    coding. Regularly collaborated with graduate student mentors and fellow group members to present work at
-                    symposium.        
-                </li>
-            </ul>
-            <h4>Blue & Gold Yearbook</h4> <h4>Berkeley, CA</h4>
-            <h5>Designer</h5> <h5>Aug 2021 - Dec 2022</h5>
-            <ul>
-                <li>
-                    Created monthly page spreads featuring campus events integrating graphic design principles on Adobe InDesign,
-                    Photoshop, and Illustrator. Collaborated across copy, photo, and editing teams to perfect designs through revision
-                    and redesign.
-                </li>
-            </ul>
-            <h4>The Daily Californian</h4> <h4>Berkeley, CA</h4>
-            <h5>News reporter</h5> <h5>Jun 2021 - Aug 2021</h5>
-            <ul>
-                <li>
-                    Interviewed, wrote, edited, and published breaking news stories online on events, research, and community of
-                    Berkeley within 24 hours of assignment. Published feature on City Council members on front page of print paper.
-                </li>
-            </ul>
+            </div>
+            <div>
+                <div>
+                    <div class="resumeItemTitle">
+                        <h4 class="resumeOrg">Computer Science Mentors</h4> <h4 class="resumeLocation">Berkeley, CA</h4>
+                    </div>
+                    <div class="resumeItemTitle">
+                        <h5 class="resumePosition">Teacher</h5> <h5 class="resumeTime">Oct 2022 - May 2023</h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Taught 1-hour lessons on Discrete Mathematics & Probability Theory to 6 students twice a week. Delivered
+                        conceptual mini-lectures and supported students through worksheets and practice exam problems. Received
+                        consistent high reviews and positive feedback.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <div class="resumeItemTitle">
+                        <h4 class="resumeOrg">Cognitive Science & Psychology Undergraduate Laboratory</h4> <h4 class="resumeLocation">Berkeley, CA</h4>
+                    </div>
+                    <div class="resumeItemTitle">
+                        <h5 class="resumePosition">Undergraduate Researcher</h5> <h5 class="resumeTime">Aug 2021 - May 2022</h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Wrote paper examining existing literature on moral judgment. Used R language for linear regression and contrast
+                        coding. Regularly collaborated with graduate student mentors and fellow group members to present work at
+                        symposium.        
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <div class="resumeItemTitle">
+                        <h4 class="resumeOrg">Blue & Gold Yearbook</h4> <h4 class="resumeLocation">Berkeley, CA</h4>
+                    </div>
+                    <div class="resumeItemTitle">
+                        <h5 class="resumePosition">Designer</h5> <h5 class="resumeTime">Aug 2021 - Dec 2022</h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Created monthly page spreads featuring campus events integrating graphic design principles on Adobe InDesign,
+                        Photoshop, and Illustrator. Collaborated across copy, photo, and editing teams to perfect designs through revision
+                        and redesign.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <div class="resumeItemTitle">
+                        <h4 class="resumeOrg">The Daily Californian</h4> <h4 class="resumeLocation">Berkeley, CA</h4>
+                    </div>
+                    <div class="resumeItemTitle">
+                        <h5 class="resumePosition">News reporter</h5> <h5 class="resumeTime">Jun 2021 - Aug 2021</h5>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        Interviewed, wrote, edited, and published breaking news stories online on events, research, and community of
+                        Berkeley within 24 hours of assignment. Published feature on City Council members on front page of print paper.
+                    </li>
+                </ul>
+            </div>
           </section>
-        
+        </div>
           <section id="hobbies">
             <h2>Hobbies and Interests</h2>
             <ul>
@@ -99,5 +142,6 @@
               </form>
             </p>
           </section>
+        </div>
     </body>
 </html>
