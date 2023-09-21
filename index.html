@@ -7,8 +7,8 @@
         <h1>Andie Liu</h1>
         <nav>
             <ul>
-              <li><a href="#about">Painting</a></li>
-              <li><a href="#resume">Resume</a></li>
+              <li><a href="./art.html">Painting</a></li>
+              <li><a href="./resume.pdf">Resume</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -80,6 +80,18 @@
             <h2>Contact Me</h2>
             <p>
               Feel free to reach out to me via email at <a href="mailto:andieliu@berkeley.edu">andieliu@berkeley.edu</a>.
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Send">
+              </form>
             </p>
           </section>
     </body>
