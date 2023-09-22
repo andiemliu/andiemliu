@@ -44,15 +44,19 @@ section {
 }
 .left-container {
     width: 50%;
-    overflow: hidden; /* Prevent content from overflowing */
-    position: relative;
+    height:100vh;
+    float:left;
+    position: fixed;
+    max-width:40%;
 }
 .left-container h2 {
     margin:5px 0px 0px 25px;
 }
 .right-container {
+    margin-left:50%;
     width: 50%;
-    overflow-y:auto; 
+    height: 100vh;
+    position:relative;
 }
 .right-container h2 {
     margin-left:0;
