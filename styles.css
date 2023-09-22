@@ -60,10 +60,8 @@ ul {
 }
 nav {
     display:flex;
-    margin:25px 0px 20px 5px;
-    padding:0;
-    background-color:rgb(226, 244, 205);
-    text-align: right;
+    margin:25px;
+    justify-content: center;
     position:sticky;
     transition:ease-in-out 0.5s;
     top:0;
@@ -72,17 +70,24 @@ nav {
     height:50px;
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    padding-top:8px;
+    justify-content: center;
     align-items:flex-end;
-    text-align:right;
-    margin-left: auto; 
-
+    padding:5;
+    text-align:center;
+    max-width:50px;
+    margin: 0 auto;
 }
   
+.menu-container {
+    border-radius: 50px;
+    background-color:rgb(246, 243, 166);
+    padding: 5px;
+    width:450px;
+    align-self: center;
+}
 .menu li {
     display: inline; /* Display list items horizontally */
-    margin-right: 50px; /* Add spacing between menu items */
+    margin: 0px 50px 15px 0px; /* Add spacing between menu items */
     font-size:17px;
 }
 
@@ -94,20 +99,20 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 5px 10px;
-    border:0px;
+    padding: 15px;
+    border:5px;
     transition: background-color 0.3s;
-    text-align:right;
+    text-align:center;
     font-weight: 500;
-
+    border-radius: 50px;
   }
   
 .menu a:hover {
     background-color: rgba(102, 145, 54, 0.617); /* Change background color on hover */
-    padding: 5px 10px;
+    padding: 15px;
 }
+/* FORM STYLE */
 form {
-
     display:flex;
     flex-direction:column;
     justify-content: center;
