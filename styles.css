@@ -1,11 +1,13 @@
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
     font-family: Helvetica;
-    
+    text-decoration: none;
+    line-height: 1.5;
 }
 body {
-    background-color:rgb(226, 244, 205);
+    background-color:#cbe0ec;
+    transition: background-color 0.9s ease;
 }
 h1 {
     font-family:Helvetica;
@@ -19,7 +21,12 @@ ul {
 section {
     margin: 0px ;
 }
-
+a {
+    color: rgb(0, 0, 0);
+}
+p, li {
+    color: rgb(53, 53, 53)
+}
 /* ABOUT SECTION */
 .about {
     line-height: 1.4;
@@ -33,16 +40,20 @@ section {
 .about li {
     margin:5px 0px 0px 25px;
 }
-.proj-link{
-    margin-top:35px;
-}
-.proj-link, .exp-link {
+.section-link{
+    font-size:15px;
     margin-left: 25px;
 }
-.proj-link a, .exp-link a {
+#exp-link{
+    margin-top:35px;
+}
+.section-link a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgba(41, 41, 41, 0.71)
+}
+.active a {
+    color: rgb(0, 0, 0);
 }
 .home-pg .container {
     margin:120px 80px 500px 80px;
@@ -74,20 +85,16 @@ footer {
 .social-icons {
     font-size: 24px; /* Adjust the font size to make the icons bigger */
     margin-bottom:30px;
-    text-decoration: none; 
-  }
-  .social-icons a {
-    text-decoration: none; /* Remove underline from icons */
   }
   /* Style individual icons */
   .social-icons a i {
-    color: rgba(141, 172, 103, 0.938); /* Change the color of the icons to blue (adjust to your desired color) */
+    color: rgb(37, 34, 34);
     margin: 0 10px; /* Add spacing between icons */
   }
   
   /* Change the color of icons on hover (optional) */
   .social-icons a:hover i {
-    color: rgb(194, 207, 178); /* Change to a different color on hover (adjust as needed) */
+    color: rgba(80, 80, 80, 0.796);
   }
 .right-container {
     margin-left:50%;
@@ -131,7 +138,7 @@ nav {
     position:fixed;
     left:32%;
     top: 5px;
-    transition:ease-in-out 0.5s;
+    transition:ease-in-out 1s;
     top:0;
 }
 .menu {
@@ -170,7 +177,8 @@ nav {
     font-weight: bold;
     padding: 15px;
     border:5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
+    transition: ease 0.5s;
     text-align:center;
     font-weight: 500;
     border-radius: 50px;
@@ -201,6 +209,15 @@ textarea {
     padding:50px;
     resize: none;
 }
+input[type=submit] {
+    width:fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+    align-self: center;
+}
+input[type=submit]:hover {
+    background-color:rgba(246, 253, 238, 0.962);
+}
 .contact-pg .container {
     margin:150px;
 }
@@ -220,7 +237,7 @@ textarea {
     text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
-  }
+}
   
   /* Style the images within grid items */
   .grid-item img {
