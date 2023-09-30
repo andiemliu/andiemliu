@@ -263,4 +263,7 @@ input[type=submit]:hover {
     margin: 10px 0;
   }
   
-  
+  #joke {
+    display: flex;
+    margin-top: 8px;
+  }

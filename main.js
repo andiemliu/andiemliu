@@ -29,14 +29,41 @@ document.addEventListener('DOMContentLoaded', function () {
             menu.classList.remove('menu-container-dark');
         }
     }
-
+    jokeElement = document.getElementById('joke');
+    // Function to fetch a dad joke from the API
+    async function fetchDadJoke() {
+        try {
+            const response = await fetch('https://icanhazdadjoke.com/', {
+                headers: {
+                    'User-Agent': 'My Library',
+                    'Accept': 'application/json',
+                },
+            });
+            if (!response.ok) {
+                throw new Error('Failed to fetch joke');
+            }
+            const data = await response.json();
+            console.log(data);
+            return data.joke;
+        } catch (error) {
+            console.error('Error fetching joke:', error);
+            return 'Failed to fetch joke. Please try again later.';
+        }
+    }
+    // Function to update the joke element with a new joke
+    async function updateJoke() {
+        const joke = await fetchDadJoke();
+        jokeElement.textContent = joke;
+    }
+    updateJoke();
+    
     const leftContainer = document.querySelector('.left-container');
     const rightContainer = document.querySelector('.right-container');
     const wait = (time) => new Promise((resolve) => setTimeout(resolve, time));
     const responsePromise = wait(100);
-    wait(100).then(() => leftContainer.style.opacity = 1).then(() => wait(100))
-    .then(() => rightContainer.style.opacity = 1).then(() => wait(100))
-    .then(() => menu.style.opacity = 1);
+    responsePromise.then(() => leftContainer.style.opacity = 1).then(() => wait(90))
+    .then(() => rightContainer.style.opacity = 1).then(() => wait(90));
+    responsePromise.then(() => menu.style.opacity = 1);
 
     // add class active on navbar link click
     const projLink = document.getElementById('proj-link');
