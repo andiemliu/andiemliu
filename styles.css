@@ -45,7 +45,7 @@ section {
     color: black;
 }
 .home-pg .container {
-    margin:120px 80px 80px 80px;
+    margin:120px 80px 500px 80px;
 }
 .home-pg h1 {
     margin:55px 0px 0px 25px;
@@ -60,6 +60,35 @@ section {
 .left-container h2 {
     margin:5px 0px 0px 25px;
 }
+footer {
+    position:fixed;
+    margin-top: auto; 
+    bottom:0;
+    width:50%;
+    height:50px;
+    text-align:left;
+    padding:10px;
+    size:150%;
+}
+/* Style the social icons */
+.social-icons {
+    font-size: 24px; /* Adjust the font size to make the icons bigger */
+    margin-bottom:30px;
+    text-decoration: none; 
+  }
+  .social-icons a {
+    text-decoration: none; /* Remove underline from icons */
+  }
+  /* Style individual icons */
+  .social-icons a i {
+    color: rgba(141, 172, 103, 0.938); /* Change the color of the icons to blue (adjust to your desired color) */
+    margin: 0 10px; /* Add spacing between icons */
+  }
+  
+  /* Change the color of icons on hover (optional) */
+  .social-icons a:hover i {
+    color: rgb(194, 207, 178); /* Change to a different color on hover (adjust as needed) */
+  }
 .right-container {
     margin-left:50%;
     width: 50%;
