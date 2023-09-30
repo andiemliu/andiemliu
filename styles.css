@@ -33,8 +33,16 @@ section {
 .about li {
     margin:5px 0px 0px 25px;
 }
-.container {
-    margin:80px;
+.proj-link{
+    margin-top:35px;
+}
+.proj-link, .exp-link {
+    margin-left: 25px;
+}
+.proj-link a, .exp-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 .home-pg .container {
     margin:120px 80px 80px 80px;
@@ -62,9 +70,10 @@ section {
     margin-left:0;
 }
 .right-container li {
+    line-height: 1.4;
     margin-left:0px;
     margin-right: 145px;
-    margin-bottom:5px;
+    /*margin-bottom:5px;*/
 }
 /* RESUME STYLE */
 .resumeItemTitle {
@@ -109,10 +118,12 @@ nav {
 }
 .menu-container {
     border-radius: 50px;
-    background-color:rgb(246, 243, 166);
     padding: 5px;
     width:520px;
     align-self: center;
+}
+.menu-container-dark {
+    background-color:rgba(242, 255, 227, 0.932);
 }
 .menu li {
     display: inline; /* Display list items horizontally */
@@ -137,7 +148,7 @@ nav {
   }
   
 .menu a:hover {
-    background-color: rgba(102, 145, 54, 0.617); /* Change background color on hover */
+    background-color:rgba(246, 253, 238, 0.962); /* Change background color on hover */
     padding: 15px;
 }
 /* FORM STYLE */
